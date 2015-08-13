@@ -45,7 +45,7 @@ Gtk.main
 
 Inside the ``declare`` block, you have a declarative syntax for constructing your widget tree.
 
-If Gtk2 has a method ``set_foobar``, you can use just ``foobar`` inside ``declare``.
+If Gtk2 has a method ``set_foobar``, you can use just write ``foobar`` inside ``declare``.
 
 To create a widget, you simply use the class name of the widget as if you would a normal method call. 
 
@@ -67,6 +67,10 @@ To connect signal a handler, you just write ``on_some_signal do |widget,data| ..
 All widgets are shown by default. So you don't need to call ``show``. If you want a widget to be hidden on start-up, you can write ``hidden`` in the ``declare`` block.
 
 ## Documentation
+
+[Official GTK2 documentation](https://developer.gnome.org/gtk2/stable/)
+
+[Ruby GTK2 documentation](http://ruby-gnome2.osdn.jp/hiki.cgi)
 
 ``declare(&block)``: Applies the Greatk DSL to a widget class. Called inside a class which can be a subclass of any descendent of Widget. 
 
